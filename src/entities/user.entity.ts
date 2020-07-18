@@ -7,7 +7,7 @@ export class User {
     @PrimaryGeneratedColumn()
     idUser: number;
 
-    @Column('varchar')
+    @Column('varchar',{unique:true})
     username: string;
 
     @Column('boolean')
